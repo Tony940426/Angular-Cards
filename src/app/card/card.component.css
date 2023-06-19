@@ -2,4 +2,6 @@
   width: 280px;
 }
 
-/* By putting app styling in the app component css. Styling only impacts this. */
+/* By putting app styling in the app component css. Styling only impacts this.
+  If you put CSS in the app component.ts file it won't impact the card component.
+*/
