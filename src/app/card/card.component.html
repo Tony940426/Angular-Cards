@@ -1,16 +1,25 @@
 <div class="card">
   <div class="card-image">
     <figure class="image is-4by3">
-      <img src="/assets/tree.jpeg" alt="Placeholder image">
+      <img src={{imgURL}} alt="Placeholder image">
     </figure>
   </div>
   <div class="card-content">
     <div class="media-content">
-      <p class="title is-4">Neat Tree</p>
-      <p class="subtitle is-6">@Tony94042</p>
+      <p class="title is-4">{{title}}</p>
+      <p class="subtitle is-6">{{userName}}</p>
     </div>
     <div class="content">
-      Saw this tree
+      {{content}}
     </div>
   </div>
 </div>
+<!--
+  Setting Up Input Binding
+  -In the parent template, find where we create the child component
+  -Decide on the property name that we want to use to communicate from the parent to child
+  -Add a new binding to the child component, specifiying the data we want to pass down
+  -In the child component's class file, add a input property. This tells the component to expect the parent to provide the value for this property
+  -In the child component's template file, reference that input property.
+
+ -->
