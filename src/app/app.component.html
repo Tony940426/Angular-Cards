@@ -1,18 +1,12 @@
 <app-card
-  [title] = "posts[0].title"
-  [userName] = "posts[0].userName"
-  [imgURL] = "posts[0].imgURL"
-  [content] = "posts[0].content"
+  *ngFor = "let post of posts"
+  [title] = "post.title"
+  [imgURL] = "post.imgURL"
+  [content] = "post.content"
+  [userName]= "post.userName"
 ></app-card>
-<app-card
-[title] = "posts[1].title"
-[userName] = "posts[1].userName"
-[imgURL] = "posts[1].imgURL"
-[content] = "posts[1].content"
-></app-card>
-<app-card
-[title] = "posts[2].title"
-[userName] = "posts[2].userName"
-[imgURL] = "posts[2].imgURL"
-[content] = "posts[2].content"
-></app-card>
+
+<!--
+  You can iterate over a method
+  It is pretty similar to a for of loop (JS)
+-->
